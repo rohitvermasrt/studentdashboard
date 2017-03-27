@@ -1,0 +1,44 @@
+<h1>List of Teachers</h1>
+
+<div ng-controller="Teacher.IndexController">
+<div ng-hide="vm.isAdd" >
+    <button id="btnCreate" class="btn btn-primary" ng-click="vm.addNew()" >Add New Teacher</button>
+    <div class="row"  >
+        <div class="col-sm-6 col-md-4" ng-repeat="teacher in vm.teachers">
+            <div class="thumbnail">
+            <div class="caption">
+                <h3>{{ teacher.name}}</h3>
+                <p>{{ teacher.sex}} - {{teacher.age}}</p>
+                <p>Subject : {{teacher.subject}}</p>
+                <p><a href="#" class="btn btn-primary" role="button" ng-click="vm.editTeacher(teacher._id)">Edit</a> 
+                <a href="#"  class="btn btn-danger" role="button"  ng-click="vm.deleteTeacher(teacher._id)">Delete</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="form-container" ng-show="vm.isAdd">
+    <form method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" ng-model="vm.teacher.name" required />
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" class="form-control" ng-model="vm.teacher.age" required />
+        </div>
+        <div class="form-group">
+            <label for="sex">Gender</label>
+            <input type="text" id="sex" class="form-control" ng-model="vm.teacher.sex" required />
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" ng-model="vm.teacher.subject" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveTeacher()">Save</button>
+            <button class="btn btn-danger" ng-click="vm.deleteUser()">Delete</button>
+        </div>
+    </form>
+</div>
+</div>
