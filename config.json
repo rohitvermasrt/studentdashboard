@@ -1,0 +1,9 @@
+﻿{
+    "connectionString": "mongodb://dbtest:dbtest@ds123050.mlab.com:23050/mytasktest",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "REPLACE THIS WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "redisHost" : "127.0.0.1",
+    "redisPort"  : 6379,
+    "redisTCP" : "tcp://127.0.0.1:6379",
+    "elasticSearchConnection" : "search-my-test-elastic-5fbryhm3zdtymg7rolyc6vcyl4.us-east-1.es.amazonaws.com"
+}
