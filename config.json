@@ -4,6 +4,6 @@
     "secret": "REPLACE THIS WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
     "redisHost" : "127.0.0.1",
     "redisPort"  : 6379,
-    "redisTCP" : "rohit-test-redis.aq7i2s.ng.0001.use1.cache.amazonaws.com:6379",
+    "redisTCP" : "tcp://rohit-test-redis.aq7i2s.ng.0001.use1.cache.amazonaws.com:6379",
     "elasticSearchConnection" : "search-my-test-elastic-5fbryhm3zdtymg7rolyc6vcyl4.us-east-1.es.amazonaws.com"
 }
