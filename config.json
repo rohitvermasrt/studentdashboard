@@ -1,7 +1,5 @@
 ﻿{
-    "connectionString": "mongodb://dbtest:dbtest@10.0.2.67:27017/mytasktest",
-    "apiUrl": "http://localhost:3000/api",
-    "secret": "REPLACE THIS WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "connectionString": "mongodb://dbtemp:dbtemp@10.0.2.67:27017/mytasktest",
     "redisHost" : "127.0.0.1",
     "redisPort"  : 6379,
     "redisTCP" : "tcp://test-redis-rohit.aq7i2s.0001.use1.cache.amazonaws.com:6379",
