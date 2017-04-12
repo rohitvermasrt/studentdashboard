@@ -50,10 +50,11 @@
         }
         
         function saveStudent() {
+                var bucketPath = "https://s3.amazonaws.com/student-dashboard/";
                 if(vm.student.sex==="Male"){
-                    vm.student.imagePath = "../app/app-content/images/male.svg";
+                    vm.student.imagePath = bucketPath +  "male.svg";
                 }else{
-                    vm.student.imagePath = "../app/app-content/images/female.svg";
+                    vm.student.imagePath = bucketPath +  "female.svg";
                 };
                 (!vm.student._id?StudentService.Create(vm.student):StudentService.Update(vm.student))
                 .then(function (student) {
